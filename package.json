@@ -9,8 +9,8 @@
     "start": "nodemon --watch server.js --watch server/",
     "postinstall": "webpack"
   },
-  "author": "Codecademy",
-  "license": "ISC",
+  "author": "AAKRITI SAHRAWAT",
+  "license": "",
   "dependencies": {
     "axios": "^0.19.2",
     "body-parser": "^1.17.2",
