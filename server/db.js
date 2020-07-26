@@ -58,7 +58,7 @@ const createIdea = () => {
     name: `${name} but for ${noun}`,
     description: 'The name says it all!!!',
     weeklyRevenue: weeklyRevenue,
-    numWeeks: numWeeks,
+    numWeeks: numWeeks
   }
 }
 
@@ -220,9 +220,13 @@ const addToDatabase = (modelType, instance) => {
     model.data.push(instance);
     return model.data[model.data.length - 1]; 
   }
+  else{
+    return null;
+  }
 }
 
 const updateInstanceInDatabase = (modelType, instance) => {
+
   const model = findDataArrayByName(modelType);
   if (model === null) {
     return null;
@@ -271,4 +275,5 @@ module.exports = {
   updateInstanceInDatabase,
   deleteFromDatabasebyId,
   deleteAllFromDatabase,
+  createWork
 };
